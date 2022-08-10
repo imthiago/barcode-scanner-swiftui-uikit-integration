@@ -11,6 +11,7 @@
 		AFDE8C2E28A46E2F00D53128 /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDE8C2D28A46E2F00D53128 /* BarcodeScannerView.swift */; };
 		AFDE8C3028A46E3000D53128 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFDE8C2F28A46E3000D53128 /* Assets.xcassets */; };
 		AFDE8C3328A46E3000D53128 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFDE8C3228A46E3000D53128 /* Preview Assets.xcassets */; };
+		AFDE8C3A28A471D000D53128 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDE8C3928A471D000D53128 /* ScannerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		AFDE8C2D28A46E2F00D53128 /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
 		AFDE8C2F28A46E3000D53128 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFDE8C3228A46E3000D53128 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AFDE8C3928A471D000D53128 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				AFDE8C2B28A46E2F00D53128 /* BarcodeScannerApp.swift */,
 				AFDE8C2D28A46E2F00D53128 /* BarcodeScannerView.swift */,
+				AFDE8C3928A471D000D53128 /* ScannerViewController.swift */,
 				AFDE8C2F28A46E3000D53128 /* Assets.xcassets */,
 				AFDE8C3128A46E3000D53128 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFDE8C2E28A46E2F00D53128 /* BarcodeScannerView.swift in Sources */,
+				AFDE8C3A28A471D000D53128 /* ScannerViewController.swift in Sources */,
 				AFDE8C2C28A46E2F00D53128 /* BarcodeScannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -37,6 +37,21 @@ final class ScannerViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
+    // MARK: - View Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupCaptureSession()
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        guard let previewLayer = previewLayer else {
+            delegate?.didSurface(error: .invalidDeviceInput)
+            return
+        }
+        previewLayer.frame = view.layer.bounds
+    }
+
     // MARK: - Private functions
     private func setupCaptureSession() {
         guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else {
@@ -96,6 +111,7 @@ extension ScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
             return
         }
 
+        captureSession.stopRunning()
         delegate?.didFind(barcode: barcode)
     }
 }
